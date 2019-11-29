@@ -102,53 +102,65 @@
             <!--END HEADER-->
 
             <!--NEW USER FORM-->
-            <form id="new-user"  action="create_account.js" class="form-wrapper">
-                <div id="createForm">
+            <form action="create_account.js">
+                <div class="form-wrapper">
                     <h1 class="ca-h1">Create Account</h1>
-                    <div class="">
-                        <div> <span class="ca-span">First Name:</span><br>
-                            <input type="text" name="First Name" class="ca-input" placeholder="Ex: John" autocomplete="given-name" autofocus>
+                    <div class="row">
+                        <div class="column left"> <span class="ca-span">First Name:</span><br>
+                            <input type="text" name="First Name" class="ca-input" placeholder="Ex: John"
+                                autocomplete="given-name" autofocus>
                             <br>
                         </div>
-                        <div>
+                        <div class="column left">
                             <span class="ca-span">Last Name:</span><br>
-                            <input type="text" name="Last Name" class="ca-input" placeholder="Ex: Doe" autocomplete="family-name">
+                            <input type="text" name="Last Name" class="ca-input" placeholder="Ex: Doe"
+                                autocomplete="family-name">
                             <br>
                         </div>
                     </div>
-                    <div><span class="ca-span">Email Address:</span><br>
-                        <input type="text" name="Email" class="ca-input" placeholder="Ex: jdoe@email.com" autocomplete="email">
-                        <br>
+                    <div class="row">
+                        <div class="column left"><span class="ca-span">Email Address:</span><br>
+                            <input type="text" name="Email" class="ca-input" placeholder="Ex: jdoe@email.com"
+                                autocomplete="email">
+                            <br>
+                        </div>
+                        <div class="column right">
+                            <span class="ca-span">Phone Number:</span><br>
+                            <input type="tel" name="Phone" class="ca-input" placeholder="Ex: 555-656-8858"
+                                autocomplete="tel-national">
+                            <br>
+                        </div>
+                        <div class="column left">
+                            <span class="ca-span">Ext.:</span><br>
+                            <input type="text" name="Extension" class="ca-small-input" placeholder="Ex: 5454"
+                                autocomplete="tel-extension"><br>
+                        </div>
                     </div>
-                    <div>
-                        <span class="ca-span">Phone Number:</span><br>
-                        <input type="tel" name="Phone" class="ca-input" placeholder="Ex: 555-656-8858" autocomplete="tel-national">
-                        <br>
-                    </div>
-                    <div>
-                        <span class="ca-span">Ext.:</span><br>
-                        <input type="text" name="Extension" class="ca-small-input" placeholder="Ex: 5454" autocomplete="tel-extension"><br>
-                    </div>
+                    <div class="row">
                     <!-- GET A PASSWORD API TO HANDLE THIS -->
-                    <div>
+                    <div class="column left">
                         <span class="ca-span">Password:</span><br>
-                        <input type="password" name="Password" class="ca-input" placeholder="Ex: ********" autocomplete="new-password">
+                        <input type="password" name="Password" class="ca-input" placeholder="Ex: ********"
+                            autocomplete="new-password">
                         <br></div>
-                    <div>
+                    <div class="column right">
                         <span class="ca-span">Confirm Password:</span><br>
-                        <input type="password" name="Confirm Password" class="ca-input" placeholder="Ex: ********" autocomplete="new-password">
+                        <input type="password" name="Confirm Password" class="ca-input" placeholder="Ex: ********"
+                            autocomplete="new-password">
                         <br></div>
+                    </div>
                     <div>
                         <input type="checkbox" name="Newsletter" class="ca-checkbox">
                         <span class="ca-span">Sign me up for the monthly newsletter</span>
                         <br></div>
                     <div>
                         <input type="checkbox" name="PrivacyPolicy" class="ca-checkbox"><span class="ca-span">
-                        By clicking here and creating an account, I
-                        acknowledge that I am blah blah blah, and I understand the Privacy Thigamajig.</span>
+                            By clicking here and creating an account, I
+                            acknowledge that I am blah blah blah, and I understand the Privacy Thigamajig.</span>
                         <br></div>
                     <div>
-                        <input type="submit" name="Submit" value="Create Account" id="ca-button" onclick="createAccount()">
+                        <input type="submit" name="Submit" value="Create Account" id="ca-button"
+                            onclick="createAccount()">
                         <br></div>
                 </div>
             </form>
@@ -178,8 +190,8 @@
         </footer>
     </div>
     <!--END PAGE CONTAINER-->
-    <script src="scripts/formhandler.js charset="utf-8
-    <script src="scripts/create_account.js" charset="utf-8"></script>
+    <script src="scripts/formhandler.js charset=" utf-8 <script src="scripts/create_account.js" charset="utf-8">
+    </script>
 </body>
 <script id="__bs_script__">
     //<![CDATA[
