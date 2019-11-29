@@ -1,0 +1,55 @@
+/* CREATE ACCOUNT PAGE STYLING */
+@import url("styles.css");
+
+#createForm {
+    position: relative;
+    /* scroll-margin-top: 2.25ch; */
+    top: 30%;
+    margin-left: 15%;
+}
+.form-wrapper {
+    position: relative;
+    top: 30%;
+    height: 100vh; 
+    max-width: 145.13ch;
+    margin: 0 auto;
+    z-index: 99;
+    /* display: inline; */
+}
+
+.ca-h1 {
+    margin-bottom: 2.25ch;
+    color: var(--cjfw-purple);
+}
+
+.ca-span {
+    color: var(--cjfw-purple);
+}
+
+.ca-input, .ca-small-input, .ca-checkbox {
+    height: 3.75ch;
+    margin-bottom: 3.13ch;
+    border: 1px var(--cjfw-purple) solid;
+}
+
+.ca-input {
+    min-width: 31.25ch;
+    
+}
+
+.ca-small-input {
+    min-width: 15.63ch;
+}
+
+.ca-checkbox {
+    width: 1.88ch;
+    height: 1.88ch;
+}
+
+#ca-button {
+    min-width: 24.88ch ;
+    height: 6.25ch;
+    margin-bottom: 6.25ch;
+    background-color: var(--cjfw-purple);
+    color: var(--blanc);
+}

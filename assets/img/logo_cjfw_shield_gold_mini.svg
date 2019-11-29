@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-5 {
+        fill: #732974;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #732974;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #f0c508;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        stroke: #edbd0a;
+      }
+
+      .cls-3, .cls-5 {
+        stroke-width: 0.25px;
+      }
+
+      .cls-3 {
+        font-size: 28px;
+        font-family: Superclarendon-Regular, Superclarendon;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="logo_cjfw_shield_gold_mini" transform="translate(0.5 0.5)">
+    <path id="Path_7" data-name="Path 7" class="cls-1" d="M62.9,70.5H.5V8.1A7.6,7.6,0,0,1,8.1.5H70.5V62.9A7.6,7.6,0,0,1,62.9,70.5Z" transform="translate(-0.5 -0.5)"/>
+    <path id="Path_8" data-name="Path 8" class="cls-2" d="M60.4,68H3V10.6A7.6,7.6,0,0,1,10.6,3H68V60.4A7.6,7.6,0,0,1,60.4,68Z" transform="translate(-0.5 -0.5)"/>
+    <text id="CJ" class="cls-3" transform="translate(14.658 31.227)"><tspan x="0" y="0">CJ</tspan></text>
+    <text id="FW" class="cls-3" transform="translate(7.742 61.31)"><tspan x="0" y="0">FW</tspan></text>
+    <path id="Path_9" data-name="Path 9" class="cls-4" d="M59.9,67.5H3.5V11.1a7.6,7.6,0,0,1,7.6-7.6H67.5V59.9A7.6,7.6,0,0,1,59.9,67.5Z" transform="translate(-0.5 -0.5)"/>
+    <rect id="cj_logo_underline" class="cls-5" width="54.8" height="1.8" transform="translate(7.6 35)"/>
+  </g>
+</svg>

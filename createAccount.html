@@ -1,0 +1,194 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="create-account.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,800&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat+Web&display=swap" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Titillium+Web&display=swap" rel="stylesheet">
+
+    <link rel="/assets/img/apple-touch-icon" sizes="57x57" href="/assets/img/apple-icon-57x57.png">
+    <link rel="/assets/img/apple-touch-icon" sizes="60x60" href="/assets/img/apple-icon-60x60.png">
+    <link rel="/assets/img/apple-touch-icon" sizes="72x72" href="/assets/img/apple-icon-72x72.png">
+    <link rel="/assets/img/apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon-76x76.png">
+    <link rel="/assets/img/apple-touch-icon" sizes="114x114" href="/assets/img/apple-icon-114x114.png">
+    <link rel="/assets/img/apple-touch-icon" sizes="120x120" href="/assets/img/apple-icon-120x120.png">
+    <link rel="/assets/img/apple-touch-icon" sizes="144x144" href="/assets/img/apple-icon-144x144.png">
+    <link rel="/assets/img/apple-touch-icon" sizes="152x152" href="/assets/img/apple-icon-152x152.png">
+    <link rel="/assets/img/apple-touch-icon" sizes="180x180" href="/assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/3d2d856331.js" crossorigin="anonymous"></script>
+    <title>Create Account - CJFW Counseling</title>
+</head>
+
+<body>
+    <!-- PAGE CONTAINER -->
+    <div id="page-container">
+        <!-- CONTENT WRAPPER -->
+        <div id="content-wrap">
+            <!--HEADER-->
+            <div class="header">
+                <!--TODO: add fixed positioning to header div-->
+                <!--HEADER TOP-->
+                <section id="header-logos">
+                    <!--TITLE & MINI LOGO [LEFT]-->
+                    <div id="header-left-logos">
+                        <a href="index.html"><a href="index.html"><img id="header-leftmost-logo"
+                                    src="assets/img/logo_cjfw_shield_mini.png" alt="company logo"></a></a>
+
+                        <img id="header-leftleast-logo" src="assets/img/logo_cjfw_text.png"
+                            alt="Crystal J Floyd-Wilson: Life Coach and Professional Counselor">
+                    </div>
+
+                    <!--MAIN LOGO [CENTER]-->
+                    <div id="header-center-logo">
+                        <a href="index.html"><a href="index.html"><img src="assets/img/logo_cjfw_shield.png"
+                                    alt="Crystal J Floyd-Wilson Main Logo"></a></a>
+                    </div>
+
+                    <!--ACCOUNT AND CART [RIGHT]-->
+                    <!--SIGN IN BUTTON WITH COLOR INDICATOR-->
+                    <nav>
+                        <ul id="header-right-buttons">
+                            <li><a href="createAccount.html"
+                                    style="background-image: linear-gradient(to right, var(--cjfw-purple), var(--cjfw-purple)); color: white;">Create
+                                    Account</a></li>
+                            <li><a href="signIn.html">Sign In</a></li>
+                            <li><a href="cart.html">Cart</li>
+                        </ul>
+                    </nav>
+                </section>
+                <!--END HEADER TOP-->
+
+                <!--HEADER BOTTOM-->
+                <section>
+                    <!--MAIN NAV-->
+                    <div>
+
+                        <nav>
+                            <ul id="nav-buttons">
+                                <li><a href="start.html">Getting Started</a></li>
+
+                                <li><a href="services.html">Services</a></li>
+
+                                <li><a href="insurance&fees.html">Insurance & Fees</a></li>
+
+                                <li><a href="appointments.html">Appointments</a></li>
+
+                                <li><a href="store.html">Store</a></li>
+
+                                <!--SEARCHBAR-->
+
+                                <!--FONT AWESOME ICON-->
+                                <li><input type="text" name="Search Bar"></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+                <!--END OF MAIN NAV-->
+            </div>
+            <!--END HEADER-->
+
+            <!--NEW USER FORM-->
+            <form id="new-user"  action="create_account.js" class="form-wrapper">
+                <div id="createForm">
+                    <h1 class="ca-h1">Create Account</h1>
+                    <div class="">
+                        <div> <span class="ca-span">First Name:</span><br>
+                            <input type="text" name="First Name" class="ca-input" placeholder="Ex: John" autocomplete="given-name" autofocus>
+                            <br>
+                        </div>
+                        <div>
+                            <span class="ca-span">Last Name:</span><br>
+                            <input type="text" name="Last Name" class="ca-input" placeholder="Ex: Doe" autocomplete="family-name">
+                            <br>
+                        </div>
+                    </div>
+                    <div><span class="ca-span">Email Address:</span><br>
+                        <input type="text" name="Email" class="ca-input" placeholder="Ex: jdoe@email.com" autocomplete="email">
+                        <br>
+                    </div>
+                    <div>
+                        <span class="ca-span">Phone Number:</span><br>
+                        <input type="tel" name="Phone" class="ca-input" placeholder="Ex: 555-656-8858" autocomplete="tel-national">
+                        <br>
+                    </div>
+                    <div>
+                        <span class="ca-span">Ext.:</span><br>
+                        <input type="text" name="Extension" class="ca-small-input" placeholder="Ex: 5454" autocomplete="tel-extension"><br>
+                    </div>
+                    <!-- GET A PASSWORD API TO HANDLE THIS -->
+                    <div>
+                        <span class="ca-span">Password:</span><br>
+                        <input type="password" name="Password" class="ca-input" placeholder="Ex: ********" autocomplete="new-password">
+                        <br></div>
+                    <div>
+                        <span class="ca-span">Confirm Password:</span><br>
+                        <input type="password" name="Confirm Password" class="ca-input" placeholder="Ex: ********" autocomplete="new-password">
+                        <br></div>
+                    <div>
+                        <input type="checkbox" name="Newsletter" class="ca-checkbox">
+                        <span class="ca-span">Sign me up for the monthly newsletter</span>
+                        <br></div>
+                    <div>
+                        <input type="checkbox" name="PrivacyPolicy" class="ca-checkbox"><span class="ca-span">
+                        By clicking here and creating an account, I
+                        acknowledge that I am blah blah blah, and I understand the Privacy Thigamajig.</span>
+                        <br></div>
+                    <div>
+                        <input type="submit" name="Submit" value="Create Account" id="ca-button" onclick="createAccount()">
+                        <br></div>
+                </div>
+            </form>
+            <!--END NEW USER FORM-->
+
+            <!--END FORM WRAPPER-->
+        </div>
+        <!--END CONTENT WRAPPER-->
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <!--CENTERED-->
+            <div class="footer-alignment">
+                <img src="assets/img/logo_cjfw_shield_gold_mini.png" alt="Golden Logo">
+                <p>Copyright © 2019. Crystal J. Floyd-Wilson MSW, LCSWA. All Rights Reserved.</p>
+            </div>
+            <!-- SOCIAL -->
+            <div id="social-footer">
+                <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <p id="designer-footer">Web Design by:</p>
+            <a id="designer-footer-logo" href="https://thebrowncoder.com" target="blank"><img
+                    src="assets/img/TBC_Logo.svg" alt="The Brown Coder Media Company" style="max-width: 40px;"></a>
+
+        </footer>
+    </div>
+    <!--END PAGE CONTAINER-->
+    <script src="scripts/formhandler.js charset="utf-8
+    <script src="scripts/create_account.js" charset="utf-8"></script>
+</body>
+<script id="__bs_script__">
+    //<![CDATA[
+    document.write(
+        "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>"
+        .replace(
+            "HOST", location.hostname));
+    //]]>
+</script>
+
+
+</html>
