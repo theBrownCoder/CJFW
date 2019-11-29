@@ -5,14 +5,16 @@
     position: relative;
     /* scroll-margin-top: 2.25ch; */
     top: 30%;
-    margin-left: 15%;
+    margin-left: 10%;
 }
+
 .form-wrapper {
     position: relative;
-    top: 30%;
-    height: 100vh; 
-    max-width: 145.13ch;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 50%vh;
+    min-width: 145.13ch;
+    margin: 20% 20% 20% 20%;
     z-index: 99;
     /* display: inline; */
 }
@@ -26,7 +28,9 @@
     color: var(--cjfw-purple);
 }
 
-.ca-input, .ca-small-input, .ca-checkbox {
+.ca-input,
+.ca-small-input,
+.ca-checkbox {
     height: 3.75ch;
     margin-bottom: 3.13ch;
     border: 1px var(--cjfw-purple) solid;
@@ -34,7 +38,7 @@
 
 .ca-input {
     min-width: 31.25ch;
-    
+
 }
 
 .ca-small-input {
@@ -44,12 +48,115 @@
 .ca-checkbox {
     width: 1.88ch;
     height: 1.88ch;
+    padding-bottom: 1ch;
 }
 
 #ca-button {
-    min-width: 24.88ch ;
+    min-width: 24.88ch;
     height: 6.25ch;
     margin-bottom: 6.25ch;
+    margin-top: 1ch;
     background-color: var(--cjfw-purple);
     color: var(--blanc);
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding-right: 8.38ch;
+}
+
+.left {
+    width: 31.25ch;
+}
+
+.right {
+    width: 31.25ch;
+}
+
+@media only screen and (max-width: 1285px) {
+    .row {
+        display: inline-block;
+    }
+
+    .row:after {
+        content: "";
+        display: flex;
+        clear: both;
+    }
+
+    .column {
+        float: inline-start;
+        width: 100%;
+        padding-right: 8.38ch;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+   
+    .column {
+        float: left;
+        width: 50%;
+        padding-right: 17.4ch;
+    }
+   
+    .form-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 50%vh;
+        min-width: 31.3ch;
+        margin-left: 5.2ch;
+        z-index: 99;
+    }
+
+    .ca-h1 {
+        margin-bottom: 2.25ch;
+        margin: 1.35ch;
+        color: var(--cjfw-purple);
+
+    }
+
+    .ca-span {
+        color: var(--cjfw-purple);
+        line-height: 2ch;
+    }
+
+    .ca-checkbox {
+        width: 1.88ch;
+        height: 1.88ch;
+        padding-bottom: 0ch;
+        margin: 1ch auto;
+    }
+
+    #ca-button {
+        min-width: 24.88ch;
+        height: 6.25ch;
+        margin: 3ch 0 6ch 3.2ch;
+        /* margin-bottom: 6ch;
+        margin-top: 3ch;
+        margin-left: 2.2ch; */
+        background-color: var(--cjfw-purple);
+        color: var(--blanc);
+        cursor: pointer;
+    }
 }
