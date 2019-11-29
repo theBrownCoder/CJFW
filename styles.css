@@ -47,12 +47,14 @@ a:hover {
 
 
 .header {
+    /* position: absolute; */
     height: auto;
+    top: 0;
     overflow: hidden;
     border-bottom: 2px var(--cjfw-yellow) solid;
     position: fixed;
     background-color: var(--blanc);
-    min-width: 100%;
+    width: 100%;
     z-index: 100;
 }
 
@@ -417,6 +419,8 @@ nav li {
     color: white;
     transition: all .1s ease-in-out; */
     }
+
+    ;
 
 
 }
