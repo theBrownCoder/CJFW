@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/appointments.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,800&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat+Web&display=swap" rel="stylesheet"> -->
 
@@ -43,7 +45,8 @@
                 <section id="header-logos">
                     <!--TITLE & MINI LOGO [LEFT]-->
                     <div id="header-left-logos">
-                        <a href="index.html"><img id="header-leftmost-logo" src="assets/img/logo_cjfw_shield_mini.png" alt="company logo"></a>
+                        <a href="index.html"><img id="header-leftmost-logo" src="assets/img/logo_cjfw_shield_mini.png"
+                                alt="company logo"></a>
                         <img id="header-leftleast-logo" src="assets/img/logo_cjfw_text.png"
                             alt="Crystal J Floyd-Wilson: Life Coach and Professional Counselor">
                     </div>
@@ -103,8 +106,83 @@
                 <!--END OF MAIN NAV-->
             </div>
             <!--END HEADER-->
-            <!--MAIN IMAGE-->
-            <section>
-                <img src="assets/img/college_students-1024x635.jpg" alt="" style="width: 100%;">
-            </section>
-            <!--END MAIN IMAGE-->
+            <!-- PAGE INTRODUCTION -->
+            <div class="ap-heading">
+                <h1>Appointments</h1>
+                <p>I’m ready to help. Let me know what you’re struggling with, what services you’re interested in,
+                    ask a question or say hello. It would be my honor to walk with you. </p>
+            </div>
+            <!--END OF PAGE INTRODUCTION-->
+            <!-- APPOINTMENT FORM -->
+            <form action="create_appointment.js" class="ap-form">
+                <div class="form-wrap">
+                    <!--EMAIL-->
+                    <div class="ap-form-input">
+                        <span class="ap-span">Email</span><br>
+                        <input type="text" name="Email" class="ap-textbox" placeholder="Ex:johndoe@email.com"
+                            autocomplete="email"><br>
+                    </div>
+
+                    <!--PHONE-->
+                    <div class="ap-form-input">
+                        <span class="ap-span">Phone</span><br><input type="tel" name="Phone Number" class="ap-textbox"
+                            placeholder="Ex:555-555-5555" autocomplete="tel"><br>
+                    </div>
+
+                    <!--CHECKBOX GROUP-->
+                    <div class="ap-form-input">
+                        <span class="ap-span">Reason for Inquiry</span><br><br>
+
+                        <input type="checkbox" class="ap-check" name="Counseling">
+                        <span>Individual Counseling</span><br><br>
+
+                        <input type="checkbox" class="ap-check" name="Marriage Counseling">
+                        <span>Marriage Counseling</span><br><br>
+
+                        <input type="checkbox" class="ap-check" name="Life Coaching">
+                        <span>Life Coaching</span><br>
+                    </div>
+                    <!--END CHECKBOX GROUP-->
+
+                    <!--INQUIRY TEXT AREA-->
+                    <div>
+                        <span class="ap-span">How Can I Help You?</span><br><br>
+                        <textarea name="Inquiry Reason" id="" cols="70" rows="10"
+                            placeholder="Tell me why you're contacting me."></textarea>
+                    </div>
+
+                    <input type="submit" class="ap-button-submit" name="Submit Appointment" value="Submit"
+                        onclick="create_appointment()"><br>
+                    <br>
+
+                    <input type="reset" class="ap-button-reset" name="Reset Appointment" value="Clear"><br>
+                </div>
+                <!--END FORM WRAP-->
+            </form>
+            <!--END APPOINTMENT FORM-->
+        </div>
+        <!--END CONTENT WRAP-->
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <!--CENTERED-->
+            <div class="footer-alignment">
+                <img src="assets/img/logo_cjfw_shield_gold_mini.png" alt="Golden Logo">
+                <p>Copyright © 2019. Crystal J. Floyd-Wilson MSW, LCSWA. All Rights Reserved.</p>
+            </div>
+            <!-- SOCIAL -->
+            <div id="social-footer">
+                <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <p id="designer-footer">Web Design by:</p>
+            <a id="designer-footer-logo" href="https://thebrowncoder.com" target="blank"><img
+                    src="assets/img/TBC_Logo.svg" alt="The Brown Coder Media Company" style="max-width: 40px;"></a>
+
+        </footer>
+    </div>
+    <!--END PAGE CONTAINER-->
+</body>
+
+</html>
