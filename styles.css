@@ -1,6 +1,8 @@
 :root {
     --cjfw-purple: #732974;
     --cjfw-yellow: #EDBD0A;
+    --cjfw-green: #058C42;
+    --cjfw-red: #FF4F79;
     --noir: #000000;
     --blanc: #FFFFFF;
     --clear: transparent;
@@ -22,10 +24,10 @@ body {
 
 body {
     font-family: 'Alegreya SC';
-     /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
     background-color: var(--blanc);
     height: fit-content;
-    
+
 }
 
 a {
@@ -35,6 +37,7 @@ a {
 a:hover {
     cursor: pointer;
 }
+
 #page-container {
     position: relative;
     min-height: 100vh;
@@ -44,7 +47,21 @@ a:hover {
     padding-bottom: 2.5rem;
 }
 
+/*---------------------------MINI HEADER----------------------------------*/
+.mini-header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 15.5ch;
+    object-fit: contain;
+    border-bottom-color: var(--cjfw-yellow) solid;
+    background-color: var(--blanc);
+    z-index: 100;
 
+}
+
+
+/* ----------------------------------------------------------------------*/
 
 .header {
     /* position: absolute; */
@@ -117,7 +134,7 @@ nav li {
     float: left;
     margin-right: 1ch;
     margin-top: 1.3ch;
-    
+
 }
 
 /* .bottom-nav {
@@ -139,10 +156,12 @@ nav li {
     text-align: center;
     border: 1px var(--clear) solid;
 }
+
 #contact-button {
     min-width: 1ch;
     margin-left: 5.5ch;
 }
+
 /* #nav-buttons a {
     text-decoration: none;
 } */
@@ -153,9 +172,9 @@ nav li {
 
 #nav-buttons a:hover {
     /* border: 1px var(--cjfw-purple) solid; */
-   background-image: linear-gradient(to right, var(--cjfw-purple), var(--cjfw-purple));
-   color: white;
-   transition: all .1s ease-in-out;
+    background-image: linear-gradient(to right, var(--cjfw-purple), var(--cjfw-purple));
+    color: white;
+    transition: all .1s ease-in-out;
 }
 
 #nav-buttons input {
@@ -188,9 +207,9 @@ nav li {
 }
 
 #helping-you p {
-    margin: .1in .3in;
+    margin: .1in .4in;
     line-height: 4ch;
-    text-align:justify;
+    text-align: justify;
     font-size: 2ch;
 }
 
@@ -277,28 +296,162 @@ nav li {
 #designer-footer-logo img {
     margin-bottom: 2ch;
 }
+@media only screen and (max-width: 360px) {
 
+    #header-leftmost-logo {
+        visibility: hidden;
+        position: absolute;
+        border: 2px green solid;
 
-@media only screen and (max-width: 525px) {
+    }
+
+    #header-left-logos {   
+        visibility: hidden;
+        position: absolute;
+        left:20%;
+        width: 100%;
+        text-align: center;
+     
+    }
+
     #get-started-btn-bottom img {
-        max-width: 10ch;
+        position: relative;
+        max-width: 5ch;
         width: 60%;
-        left: 5ch;
+        left:2ch;
+        top: 4ch;
     }
 
 }
-@media only screen and (max-width: 1285px) {
-    /* #header-leftmost-logo {
-        margin-top: 6ch;
-        margin-left: 14ch;
+@media only screen and (max-width: 375px) {
+    #get-started-btn-bottom img {
+        position: relative;
+        max-width: 5ch;
+        width: 60%;
+        left: 202ch;
+        top: 4ch;
     }
-    #header-leftleast-logo {
-        margin-left: 0;
-        margin-right: 3ch;
-    } */
+}
+@media only screen and (max-width: 525px) {
 
     .header {
+        background-image: url("assets/img/mini-header_white-2.png");
+        height: 5ch;
+        background-repeat: no-repeat;
+    }
+
+    #get-started-btn-bottom img {
+        position: relative;
+        max-width: 10ch;
+        width: 60%;
+        left: -3ch;
+        top: 2.5ch;
+    }
+
+    #header-logos {
+        width: 525px;
         visibility: hidden;
+        display: flex;
+        /* flex-direction: row; */
+    }
+
+    #header-left-logos {
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        visibility: hidden;
+    }
+
+    #header-leftmost-logo {
+        visibility: hidden;
+        position: relative;
+        border: 2px green solid;
+        margin: 0 auto;
+
+    }
+
+
+}
+@media only screen and (max-width: 640px) {
+    #get-started-btn-bottom img {
+        position: relative;
+        max-width: 10ch;
+        width: 60%;
+        left: -2ch;
+        top: 4ch;
+    }
+    #header-left-logos {
+        width: 100%;
+        text-align: center;
+        visibility: hidden;
+        /* padding-left: -11ch; */
+        margin-left: 2ch;
+        border: 1px blue solid
+    }
+
+    .header-leftmost-logo {
+        position: relative;
+        margin-left: 20ch;
+    }
+
+     #header-logos {
+         visibility: hidden;
+         /* display: flex;*/
+        border: 1px red double;
+
+         /* flex-direction: row; */
+     }
+
+}
+@media only screen and (max-width: 768px) {
+    #get-started-btn-bottom img {
+        position: relative;
+        max-width: 10ch;
+        width: 60%;
+        left: -2ch;
+        top: 4ch;
+    }
+
+
+}
+@media only screen and (max-width: 1024px) {
+    #get-started-btn-bottom img {
+        position: relative;
+        max-width: 10ch;
+        width: 60%;
+        left: 2ch;
+        top: 4ch;
+    }
+
+     .header {
+         background-image: url("assets/img/mini-header_white.png");
+         height: 5ch;
+         background-repeat: no-repeat;
+     }
+}
+@media only screen and (max-width: 1285px) {
+
+
+
+    #header-leftmost-logo {
+        background-image: url("assets/img/icon-hamburger_menu.png");
+        margin-top: 7ch;
+        margin-left: 15%;
+    }
+
+    /* #header-leftleast-logo { */
+    /* margin-left: 0; */
+    /* margin-right: 3ch; */
+    /* }  */
+
+    .header {
+
+        background-image: url('/assets/img/mini-header_white.png');
+        height: 6ch;
+        background-repeat: no-repeat;
+        border-bottom: none;
+
         /* height: auto; */
         /* overflow: hidden; */
         /* background-image: url("assets/img/cjfw_small-header..png"); */
@@ -306,7 +459,7 @@ nav li {
         /* position: fixed; */
         /* background-color: var(--blanc); */
         /* min-width: 100%; */
-        /* z-index: 100; */
+        /* z-index: 100;*/
     }
 
 
@@ -318,18 +471,20 @@ nav li {
     }
 
     #header-left-logos {
+        width: 100%;
+        text-align: center;
         visibility: hidden;
-        /* padding-left: 5ch;
-    border: 4px blue solid; */
+        /* padding-left: -11ch; */
+        border: 1px blue solid
     }
 
     #header-leftmost-logo {
         visibility: hidden;
-        /* position: relative;
-    /* top: -2ch; */
-        /* border: 2px green solid; */
-        /* padding-bottom: 2ch; */
-       
+        position: absolute;
+        top: -7.5ch;
+        border: 2px green solid;
+        margin-bottom: 2ch;
+
     }
 
     #header-leftleast-logo {
@@ -429,5 +584,4 @@ nav li {
     color: var(--cjfw-purple);
     font-weight: bold;
     cursor: text;
-} */
-
+}*/
