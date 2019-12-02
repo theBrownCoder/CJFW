@@ -1,0 +1,72 @@
+@import url("styles.css");
+
+.form-wrap {
+    margin-bottom: 7ch;
+
+}
+.ap-heading {
+    color: var(--cjfw-purple);
+    position: relative;
+    margin-top: 20%;
+    /* margin-left: 10%; */
+    text-align: center;
+}
+
+.ap-heading p {
+    margin: 6.5ch 12ch;
+    text-align: left;
+}
+
+.ap-form {
+    position: relative;
+    margin: 0 12ch;
+}
+
+.ap-textbox {
+    min-width: 50ch;
+}
+
+.ap-form-input {
+    color: var(--cjfw-purple);
+    margin-bottom: 3ch;
+}
+
+.ap-span {
+    color: var(--cjfw-purple);
+    font-weight: bold;
+    margin-bottom: .5ch;
+}
+
+.ap-check {
+    margin-bottom: 1.5ch;
+    cursor: pointer;
+}
+
+textarea {
+    border-color: var(--cjfw-purple);
+    resize: none;
+    margin-bottom: 2ch;
+}
+
+.ap-button, .ap-button-submit, .ap-button-reset {
+    min-width: 20ch;
+    height: 4ch;
+    background-color: var(--clear);
+    color: var(--cjfw-purple);
+    border-color: var(--cjfw-purple);
+}
+.ap-button-submit:hover {
+    color: var(--blanc);
+    background-color: var(--cjfw-green);
+    cursor: pointer;
+    border-color: var(--cjfw-green);
+    transition-duration: .2s;
+}
+
+.ap-button-reset:hover {
+    color: var(--blanc);
+    background-color: var(--cjfw-red);
+    cursor: pointer;
+    border-color: var(--cjfw-red);
+    transition-duration: .2s;
+}
