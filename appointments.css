@@ -1,25 +1,26 @@
 @import url("styles.css");
 
 .form-wrap {
-    margin-bottom: 7ch;
+    margin: 22% 0%;
 
 }
+
 .ap-heading {
     color: var(--cjfw-purple);
     position: relative;
-    margin-top: 20%;
+    margin: 22% 20%;
     /* margin-left: 10%; */
-    text-align: center;
+    /* text-align: center;*/
 }
 
 .ap-heading p {
-    margin: 6.5ch 12ch;
+    margin-bottom: 2.25ch;
     text-align: left;
 }
 
 .ap-form {
     position: relative;
-    margin: 0 12ch;
+    margin: 22% 0 22% 15%;
 }
 
 .ap-textbox {
@@ -29,6 +30,11 @@
 .ap-form-input {
     color: var(--cjfw-purple);
     margin-bottom: 3ch;
+}
+
+.ap-form-input h1 {
+    padding-top: 1.3ch;
+    margin-bottom: 2.25ch;
 }
 
 .ap-span {
@@ -48,13 +54,17 @@ textarea {
     margin-bottom: 2ch;
 }
 
-.ap-button, .ap-button-submit, .ap-button-reset {
+.ap-button,
+.ap-button-submit,
+.ap-button-reset {
     min-width: 20ch;
     height: 4ch;
     background-color: var(--clear);
     color: var(--cjfw-purple);
     border-color: var(--cjfw-purple);
+    transition: ease-in-out .2s;
 }
+
 .ap-button-submit:hover {
     color: var(--blanc);
     background-color: var(--cjfw-green);
