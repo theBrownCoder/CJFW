@@ -13,8 +13,8 @@
     display: flex;
     flex-direction: column;
     height: 50%vh;
-    min-width: 145.13ch;
-    margin: 20% 20% 20% 20%;
+    min-width: 130ch;
+    margin: 22% 0 22% 15%;
     z-index: 99;
     /* display: inline; */
 }
@@ -77,13 +77,13 @@
     padding-right: 8.38ch;
 }
 
-.left {
+.left, .right {
     width: 31.25ch;
 }
 
-.right {
+/* .right {
     width: 31.25ch;
-}
+} */
 
 @media only screen and (max-width: 1285px) {
     .header {
