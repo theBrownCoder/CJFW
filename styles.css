@@ -178,15 +178,14 @@ nav li {
 }
 
 #nav-buttons input {
-    min-width: 247px;
+    min-width: 50ch;
     text-align: left;
     text-indent: 2ch;
     /* height:100px; */
     float: right;
     font-size: 1.7ch;
-    margin: .5ch 1ch;
+    margin: .9ch 1ch;
     height: 3ch;
-    border-radius: 10.5px;
     line-height: 1ch;
     margin-left: 1ch;
     border: 1px var(--cjfw-purple) solid;
