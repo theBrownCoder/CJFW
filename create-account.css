@@ -61,6 +61,34 @@
     cursor: pointer;
 }
 
+
+
+.ca-button-reset, .ca-button-submit {
+    min-width: 20ch;
+    height: 4ch;
+    background-color: var(--clear);
+    color: var(--cjfw-purple);
+    border-color: var(--cjfw-purple);
+    transition: ease-in-out .2s;
+    margin-bottom: 2ch;
+}
+
+.ca-button-submit:hover {
+    color: var(--blanc);
+    background-color: var(--cjfw-green);
+    cursor: pointer;
+    border-color: var(--cjfw-green);
+    transition-duration: .2s;
+}
+
+.ca-button-reset:hover {
+    color: var(--blanc);
+    background-color: var(--cjfw-red);
+    cursor: pointer;
+    border-color: var(--cjfw-red);
+    transition-duration: .2s;
+}
+
 .row {
     display: flex;
 }
@@ -77,7 +105,8 @@
     padding-right: 8.38ch;
 }
 
-.left, .right {
+.left,
+.right {
     width: 31.25ch;
 }
 
@@ -87,7 +116,7 @@
 
 @media only screen and (max-width: 1285px) {
     .header {
-        background-image: url("assets/img/mini-header_white.png");
+        background-image: url("img/mini-header_white.png");
         height: 5ch;
         background-repeat: no-repeat;
     }
@@ -119,7 +148,7 @@
 
 @media only screen and (max-width: 525px) {
     .header {
-        background-image: url("assets/img/mini-header_white.png");
+        background-image: url("img/mini-header_white.png");
         height: 5ch;
         background-repeat: no-repeat;
     }
@@ -175,7 +204,7 @@
 @media only screen and (max-width: 525px) {
 
     .header {
-        background-image: url("assets/img/mini-header_white.png");
+        background-image: url("img/mini-header_white.png");
         height: 5ch;
         background-repeat: no-repeat;
     }
@@ -216,7 +245,7 @@
 
 @media only screen and (max-width: 640px) {
     .header {
-        background-image: url("assets/img/mini-header_white.png");
+        background-image: url("img/mini-header_white.png");
         height: 5ch;
         background-repeat: no-repeat;
     }
@@ -256,7 +285,7 @@
 @media only screen and (max-width: 768px) {
 
     .header {
-        background-image: url("assets/img/mini-header_white.png");
+        background-image: url("img/mini-header_white.png");
         height: 5ch;
         background-repeat: no-repeat;
     }
@@ -274,7 +303,7 @@
 
 @media only screen and (max-width: 1024px) {
     .header {
-        background-image: url("assets/img/mini-header_white.png");
+        background-image: url("img/mini-header_white.png");
         height: 5ch;
         background-repeat: no-repeat;
     }
@@ -290,7 +319,7 @@
 
 @media only screen and (max-width: 1285px) {
     #header-leftmost-logo {
-        background-image: url("assets/img/icon-hamburger_menu.png");
+        background-image: url("img/icon-hamburger_menu.png");
         margin-top: 7ch;
         margin-left: 15%;
     }
@@ -302,14 +331,14 @@
 
     .header {
 
-        background-image: url('/assets/img/mini-header_white.png');
+        background-image: url('/img/mini-header_white.png');
         height: 6ch;
         background-repeat: no-repeat;
         border-bottom: none;
 
         /* height: auto; */
         /* overflow: hidden; */
-        /* background-image: url("assets/img/cjfw_small-header..png"); */
+        /* background-image: url("img/cjfw_small-header..png"); */
         /* border-bottom: 2px var(--cjfw-yellow) solid; */
         /* position: fixed; */
         /* background-color: var(--blanc); */

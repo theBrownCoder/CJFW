@@ -11,15 +11,15 @@
 
   <link href="https://fonts.googleapis.com/css?family=Istok+Web|Titillium+Web&display=swap" rel="stylesheet">
 
-  <link rel="/assets/img/apple-touch-icon" sizes="57x57" href="/assets/img/apple/apple-icon-57x57.png">
-  <link rel="/assets/img/apple-touch-icon" sizes="60x60" href="/assets/img/apple/apple-icon-60x60.png">
-  <link rel="/assets/img/apple-touch-icon" sizes="72x72" href="/assets/img/apple/apple-icon-72x72.png">
-  <link rel="/assets/img/apple-touch-icon" sizes="76x76" href="/assets/img/apple/apple-icon-76x76.png">
-  <link rel="/assets/img/apple-touch-icon" sizes="114x114" href="/assets/img/apple/apple-icon-114x114.png">
-  <link rel="/assets/img/apple-touch-icon" sizes="120x120" href="/assets/img/apple/apple-icon-120x120.png">
-  <link rel="/assets/img/apple-touch-icon" sizes="144x144" href="/assets/img/apple/apple-icon-144x144.png">
-  <link rel="/assets/img/apple-touch-icon" sizes="152x152" href="/assets/img/apple/apple-icon-152x152.png">
-  <link rel="/assets/img/apple-touch-icon" sizes="180x180" href="/assets/img/apple/apple-icon-180x180.png">
+  <link rel="/img/apple-touch-icon" sizes="57x57" href="/img/apple/apple-icon-57x57.png">
+  <link rel="/img/apple-touch-icon" sizes="60x60" href="/img/apple/apple-icon-60x60.png">
+  <link rel="/img/apple-touch-icon" sizes="72x72" href="/img/apple/apple-icon-72x72.png">
+  <link rel="/img/apple-touch-icon" sizes="76x76" href="/img/apple/apple-icon-76x76.png">
+  <link rel="/img/apple-touch-icon" sizes="114x114" href="/img/apple/apple-icon-114x114.png">
+  <link rel="/img/apple-touch-icon" sizes="120x120" href="/img/apple/apple-icon-120x120.png">
+  <link rel="/img/apple-touch-icon" sizes="144x144" href="/img/apple/apple-icon-144x144.png">
+  <link rel="/img/apple-touch-icon" sizes="152x152" href="/img/apple/apple-icon-152x152.png">
+  <link rel="/img/apple-touch-icon" sizes="180x180" href="/img/apple/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -34,7 +34,8 @@
   <title>Home - CJFW Counseling</title>
 </head>
 
-<body>
+<body link="#732974" vlink="#732974">
+  <script src="scripts/datastore.js" charset=""></script>
   <!-- PAGE CONTAINER -->
   <div id="page-container">
     <!-- CONTENT WRAPPER -->
@@ -44,19 +45,16 @@
         <!--TODO: add fixed positioning to header div-->
         <!--HEADER TOP-->
         <section id="header-logos">
-          <!--TITLE & MINI LOGO [LEFT]-->
           <div id="header-left-logos">
-            <a href="index.html"><a href="index.html"><img id="header-leftmost-logo"
-                  src="assets/img/logo_cjfw_shield_mini.png" alt="company logo"></a></a>
-
-            <img id="header-leftleast-logo" src="assets/img/logo_cjfw_text.png"
+            <a href="index.html"><img id="header-leftmost-logo" src="img/logo_cjfw_shield_mini.png"
+                alt="company logo"></a>
+            <img id="header-leftmost-logo" style="visibility: hidden;" src="img/logo_cjfw_text.png"
               alt="Crystal J Floyd-Wilson: Life Coach and Professional Counselor">
           </div>
 
           <!--MAIN LOGO [CENTER]-->
           <div id="header-center-logo">
-            <a href="index.html"><a href="index.html"><img src="assets/img/logo_cjfw_shield.png"
-                  alt="Crystal J Floyd-Wilson Main Logo"></a></a>
+            <a href="index.html"><img src="img/logo_cjfw_text.png" alt="Crystal J Floyd-Wilson Main Logo"></a>
           </div>
 
           <!--ACCOUNT AND CART [RIGHT]-->
@@ -78,20 +76,21 @@
 
             <nav>
               <ul id="nav-buttons">
-                <li><a href="start.html">Getting Started</a></li>
+                <li><a href="start.html">Getting Started</a>
+                <li>
 
                 <li><a href="services.html">Services</a></li>
 
                 <li><a href="insurance&fees.html">Insurance & Fees</a></li>
 
-                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="pages/appointments.html">Appointments</a></li>
 
                 <li><a href="store.html">Store</a></li>
 
                 <!--SEARCHBAR-->
 
                 <!--FONT AWESOME ICON-->
-                <li><input type="text" name="Search Bar"></li>
+                <li id="nav-buttons"><input type="text" name="Search Bar"></li>
               </ul>
             </nav>
           </div>
@@ -101,7 +100,7 @@
       <!--END HEADER-->
       <!--MAIN IMAGE-->
       <section>
-        <img src="assets/img/college_students-1024x635.jpg" alt="" style="width: 100%;">
+        <img src="img/college_students-1024x635.jpg" alt="" style="width: 100%;">
       </section>
       <!--END MAIN IMAGE-->
 
@@ -123,14 +122,14 @@
       <!--LICENSURE SECTION [LEFT]-- Possibly make this one a singular image -->
       <section>
         <!--CONTAINER BACKGROUND-->
-        <!-- <img src="assets/img/section_cjfw_licensure.png" alt=""> -->
-        <!-- <img src="assets/img/container_cjfw1.png" alt="CJFW Licensure"> -->
+        <!-- <img src="img/section_cjfw_licensure.png" alt=""> -->
+        <!-- <img src="img/container_cjfw1.png" alt="CJFW Licensure"> -->
 
         <!-- OVERLAY WITH LICENSE #, PICTURE, AND NAME ICON-->
         <!-- <div>
-      <img src="assets/img/img_cjfw1.png" alt="Crystal J Floyd-Wilson">
-      <img src="assets/img/icon_license_number.png" alt="CJFW License Number">
-      <img src="assets/img/icon_name_title_header.png" alt="CJFW Counseling">
+      <img src="img/img_cjfw1.png" alt="Crystal J Floyd-Wilson">
+      <img src="img/icon_license_number.png" alt="CJFW License Number">
+      <img src="img/icon_name_title_header.png" alt="CJFW Counseling">
     </div>END OVERLAY -->
 
       </section>
@@ -138,14 +137,14 @@
       <!--GET STARTED AND IMAGE [CENTER & RIGHT]-->
       <section class="licensure-wrapper">
         <div>
-          <img src="assets/img/cjfw_licensure_photo.jpg" alt="Crystal J Floyd-Wilson's License Information'"
+          <img src="img/cjfw_licensure_photo.jpg" alt="Crystal J Floyd-Wilson's License Information'"
             style="width:100%;">
 
 
         </div>
-        <a id="get-started-btn-bottom" href="start.html"><img src="assets/img/btn/btn_get_started.png"
+        <a id="get-started-btn-bottom" href="start.html"><img src="img/btn/btn_get_started.png"
             alt="Get started here" style="max-width: 20ch;"></a>
-        <!-- <img id="cjfw-licensure" src="assets/img/section_cjfw_licensure.png" alt="">
+        <!-- <img id="cjfw-licensure" src="img/section_cjfw_licensure.png" alt="">
     <div>
     </div> -->
       </section>
@@ -154,7 +153,7 @@
     <footer class="footer">
       <!--CENTERED-->
       <div class="footer-alignment">
-        <img src="assets/img/logo_cjfw_shield_gold_mini.png" alt="Golden Logo">
+        <img src="img/logo_cjfw_shield_gold_mini.png" alt="Golden Logo">
         <p>Copyright © 2019 Crystal J. Floyd-Wilson MSW, LCSWA. All Rights Reserved.</p>
       </div>
       <!-- SOCIAL -->
@@ -164,18 +163,18 @@
         <a href="https://facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
       </div>
       <p id="designer-footer">Web Design by:</p>
-      <a id="designer-footer-logo" href="https://thebrowncoder.com" target="blank"><img src="assets/img/TBC_Logo.svg"
+      <a id="designer-footer-logo" href="https://thebrowncoder.com" target="blank"><img src="img/TBC_Logo.svg"
           alt="The Brown Coder Media Company" style="max-width: 40px;"></a>
-
     </footer>
   </div>
   <!--END OF PAGE CONTAINER-->
-</body>
-<script id="__bs_script__">
-  //<![CDATA[
-  document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace(
-    "HOST", location.hostname));
-  //]]>
-</script>
+  </body>
+  <script id="__bs_script__">
+    //<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>"
+      .replace(
+        "HOST", location.hostname));
+    //]]>
+  </script>
 
 </html>

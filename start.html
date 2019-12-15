@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="services.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:400,800&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat+Web&display=swap" rel="stylesheet"> -->
 
     <link href="https://fonts.googleapis.com/css?family=Istok+Web|Titillium+Web&display=swap" rel="stylesheet">
 
-    <link rel="/assets/img/apple-touch-icon" sizes="57x57" href="/assets/img/apple/apple-icon-57x57.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="60x60" href="/assets/img/apple/apple-icon-60x60.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="72x72" href="/assets/img/apple/apple-icon-72x72.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="76x76" href="/assets/img/apple/apple-icon-76x76.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="114x114" href="/assets/img/apple/apple-icon-114x114.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="120x120" href="/assets/img/apple/apple-icon-120x120.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="144x144" href="/assets/img/apple/apple-icon-144x144.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="152x152" href="/assets/img/apple/apple-icon-152x152.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="180x180" href="/assets/img/apple/apple-icon-180x180.png">
+    <link rel="/img/apple-touch-icon" sizes="57x57" href="/img/apple/apple-icon-57x57.png">
+    <link rel="/img/apple-touch-icon" sizes="60x60" href="/img/apple/apple-icon-60x60.png">
+    <link rel="/img/apple-touch-icon" sizes="72x72" href="/img/apple/apple-icon-72x72.png">
+    <link rel="/img/apple-touch-icon" sizes="76x76" href="/img/apple/apple-icon-76x76.png">
+    <link rel="/img/apple-touch-icon" sizes="114x114" href="/img/apple/apple-icon-114x114.png">
+    <link rel="/img/apple-touch-icon" sizes="120x120" href="/img/apple/apple-icon-120x120.png">
+    <link rel="/img/apple-touch-icon" sizes="144x144" href="/img/apple/apple-icon-144x144.png">
+    <link rel="/img/apple-touch-icon" sizes="152x152" href="/img/apple/apple-icon-152x152.png">
+    <link rel="/img/apple-touch-icon" sizes="180x180" href="/img/apple/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -42,20 +43,18 @@
                 <!--TODO: add fixed positioning to header div-->
                 <!--HEADER TOP-->
                 <section id="header-logos">
-                    <!--TITLE & MINI LOGO [LEFT]-->
                     <div id="header-left-logos">
-                        <a href="index.html"><img id="header-leftmost-logo" src="assets/img/logo_cjfw_shield_mini.png" alt="company logo"></a>
-                        
-                        <img id="header-leftleast-logo" src="assets/img/logo_cjfw_text.png"
+                        <a href="index.html"><img id="header-leftmost-logo" src="img/logo_cjfw_shield_mini.png"
+                                alt="company logo"></a>
+                        <img id="header-leftmost-logo" style="visibility: hidden;" src="img/logo_cjfw_text.png"
                             alt="Crystal J Floyd-Wilson: Life Coach and Professional Counselor">
                     </div>
 
                     <!--MAIN LOGO [CENTER]-->
                     <div id="header-center-logo">
-                        <a href="index.html"><img src="assets/img/logo_cjfw_shield.png"
+                        <a href="index.html"><img src="img/logo_cjfw_text.png"
                                 alt="Crystal J Floyd-Wilson Main Logo"></a>
                     </div>
-
                     <!--ACCOUNT AND CART [RIGHT]-->
                     <!--SIGN IN BUTTON WITH COLOR INDICATOR-->
                     <nav>
@@ -76,13 +75,14 @@
                         <nav>
                             <ul id="nav-buttons">
                                 <li><a href="#"
-                                        style="background-image: linear-gradient(to right, var(--cjfw-purple), var(--cjfw-purple)); color: white;">Getting Started</a></li>
+                                        style="background-image: linear-gradient(to right, var(--cjfw-purple), var(--cjfw-purple)); color: white;">Getting
+                                        Started</a></li>
 
                                 <li><a href="services.html">Services</a></li>
 
                                 <li><a href="insurance&fees.html">Insurance & Fees</a></li>
 
-                                <li><a href="appointments.html">Appointments</a></li>
+                                <li><a href="pages/appointments.html">Appointments</a></li>
 
                                 <li><a href="store.html">Store</a></li>
 
@@ -97,13 +97,130 @@
                 <!--END OF MAIN NAV-->
             </div>
             <!--END HEADER-->
-            <!--MAIN IMAGE-->
-            <section>
-                <img src="assets/img/college_students-1024x635.jpg" alt="" style="width: 100%;">
-            </section>
-            <!--END MAIN IMAGE-->
+            <!------------------DOCUMENT GRID CONTAINER--------------------->
+            <div class="st-category-wrap">
+                <h1>Getting Started</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim
+                    id est laborum.</p>
+                <div class="st-category-container">
+                    <div id="st-category-upper">
+                        <img src="/img/img_docDefault_PDF.png" class="st-category-img" alt="">
+                        <div id="title-span"><span class="se-category-title">Client Information</span></div>
+                    </div>
+                    <div>
+                        <input type="button" class="st-category-button" value="Download">
+                    </div>
+                </div><!-- END CATEGORY CONTAINER-->
+
+                <div class="st-category-container">
+                    <div id="st-category-upper">
+                        <img src="/img/img_docDefault_PDF.png" class="st-category-img" alt="">
+                        <div id="title-span"><span class="se-category-title">Client Information</span></div>
+                    </div>
+                    <div>
+                        <input type="button" class="st-category-button" value="Download">
+                    </div>
+                </div><!-- END CATEGORY CONTAINER-->
+
+                <div class="st-category-container">
+                    <div id="st-category-upper">
+                        <img src="/img/img_docDefault_PDF.png" class="st-category-img" alt="">
+                        <div id="title-span"><span class="se-category-title">Client Information</span></div>
+                    </div>
+                    <div>
+                        <input type="button" class="st-category-button" value="Download">
+                    </div>
+                </div><!-- END CATEGORY CONTAINER-->
+
+                <div class="st-category-container">
+                    <div id="st-category-upper">
+                        <img src="/img/img_docDefault_PDF.png" class="st-category-img" alt="">
+                        <div id="title-span"><span class="se-category-title">Client Information</span></div>
+                    </div>
+                    <div>
+                        <input type="button" class="st-category-button" value="Download">
+                    </div>
+                </div><!-- END CATEGORY CONTAINER-->
+
+                <div class="st-category-container">
+                    <div id="st-category-upper">
+                        <img src="/img/img_docDefault_PDF.png" class="st-category-img" alt="">
+                        <div id="title-span"><span class="se-category-title">Client Information</span></div>
+                    </div>
+                    <div>
+                        <input type="button" class="st-category-button" value="Download">
+                    </div>
+                </div><!-- END CATEGORY CONTAINER-->
+
+                <div class="st-category-container">
+                    <div id="st-category-upper">
+                        <img src="/img/img_docDefault_PDF.png" class="st-category-img" alt="">
+                        <div id="title-span"><span class="se-category-title">Client Information</span></div>
+                    </div>
+                    <div>
+                        <input type="button" class="st-category-button" value="Download">
+                    </div>
+                </div><!-- END CATEGORY CONTAINER-->
+
+                <div class="st-category-container">
+                    <div id="st-category-upper">
+                        <img src="/img/img_docDefault_PDF.png" class="st-category-img" alt="">
+                        <div id="title-span"><span class="se-category-title">Client Information</span></div>
+                    </div>
+                    <div>
+                        <input type="button" class="st-category-button" value="Download">
+                    </div>
+                </div><!-- END CATEGORY CONTAINER-->
+
+                <div class="st-category-container">
+                    <div id="st-category-upper">
+                        <img src="/img/img_docDefault_PDF.png" class="st-category-img" alt="">
+                        <div id="title-span"><span class="se-category-title">Client Information</span></div>
+                    </div>
+                    <div>
+                        <input type="button" class="st-category-button" value="Download">
+                    </div>
+                </div><!-- END CATEGORY CONTAINER-->
+            </div>
+            <!--FOOTER-->
+            <footer class="footer">
+                <!--CENTERED-->
+                <div class="footer-alignment">
+                    <img src="img/logo_cjfw_shield_gold_mini.png" alt="Golden Logo">
+                    <p>Copyright © 2019 Crystal J. Floyd-Wilson MSW, LCSWA. All Rights Reserved.</p>
+                </div>
+                <!-- SOCIAL -->
+                <div id="social-footer">
+                    <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+                </div>
+                <p id="designer-footer">Web Design by:</p>
+                <a id="designer-footer-logo" href="https://thebrowncoder.com" target="blank"><img
+                        src="img/TBC_Logo.svg" alt="The Brown Coder Media Company" style="max-width: 40px;"></a>
+
+            </footer>
         </div>
-    </div>
+        <!--END OF PAGE CONTAINER-->
+</body>
+<script id="__bs_script__">
+    //<![CDATA[
+    document.write(
+        "<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>"
+        .replace(
+            "HOST", location.hostname));
+    //]]>
+</script>
+
+</html>
+</div>
+</div>
 </body>
 
 </html>

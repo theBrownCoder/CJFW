@@ -13,8 +13,8 @@ function create_account() {
 
     // store input of each textbox
     console.log(fname + lname);
-    alert("Value inside the text boxes is: + fname + \" \" + lname");
-
+    // prompt("Value inside the text boxes is: " + fname + " " + lname);
+    return;
 
 
 
@@ -41,4 +41,4 @@ function create_account() {
     //     then append a comma(,) to the beginning of the extension variable
 
     // USE PASSWORD SERVICE TO 
-};
+}

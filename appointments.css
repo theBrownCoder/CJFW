@@ -31,6 +31,12 @@
     color: var(--cjfw-purple);
     margin-bottom: 3ch;
 }
+.ap-form-input input {
+    border: 1px var(--cjfw-purple) solid;
+}
+.ap-form-input p {
+    margin-right: 20%;
+}
 
 .ap-form-input h1 {
     padding-top: 1.3ch;
@@ -46,6 +52,11 @@
 .ap-check {
     margin-bottom: 1.5ch;
     cursor: pointer;
+    color:var(--cjfw-purple);
+}
+
+.ap-check:checked{
+    background-color: var(--cjfw-purple);
 }
 
 textarea {

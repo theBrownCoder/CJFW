@@ -1,1 +1,1 @@
-browser-sync start --server --browser "Google Chrome" --index "index.html" --files "*.html, *.scss, *.css, scripts/*.js, assets/*.png"
+browser-sync start --server --browser "Google Chrome" --index "index.html" --files "*.html, *.scss, *.css, scripts/*.js, *.png"

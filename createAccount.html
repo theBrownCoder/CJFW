@@ -12,15 +12,15 @@
 
     <link href="https://fonts.googleapis.com/css?family=Istok+Web|Titillium+Web&display=swap" rel="stylesheet">
 
-    <link rel="/assets/img/apple-touch-icon" sizes="57x57" href="/assets/img/apple/apple-icon-57x57.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="60x60" href="/assets/img/apple/apple-icon-60x60.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="72x72" href="/assets/img/apple/apple-icon-72x72.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="76x76" href="/assets/img/apple/apple-icon-76x76.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="114x114" href="/assets/img/apple/apple-icon-114x114.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="120x120" href="/assets/img/apple/apple-icon-120x120.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="144x144" href="/assets/img/apple/apple-icon-144x144.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="152x152" href="/assets/img/apple/apple-icon-152x152.png">
-    <link rel="/assets/img/apple-touch-icon" sizes="180x180" href="/assets/img/apple/apple-icon-180x180.png">
+    <link rel="/img/apple-touch-icon" sizes="57x57" href="/img/apple/apple-icon-57x57.png">
+    <link rel="/img/apple-touch-icon" sizes="60x60" href="/img/apple/apple-icon-60x60.png">
+    <link rel="/img/apple-touch-icon" sizes="72x72" href="/img/apple/apple-icon-72x72.png">
+    <link rel="/img/apple-touch-icon" sizes="76x76" href="/img/apple/apple-icon-76x76.png">
+    <link rel="/img/apple-touch-icon" sizes="114x114" href="/img/apple/apple-icon-114x114.png">
+    <link rel="/img/apple-touch-icon" sizes="120x120" href="/img/apple/apple-icon-120x120.png">
+    <link rel="/img/apple-touch-icon" sizes="144x144" href="/img/apple/apple-icon-144x144.png">
+    <link rel="/img/apple-touch-icon" sizes="152x152" href="/img/apple/apple-icon-152x152.png">
+    <link rel="/img/apple-touch-icon" sizes="180x180" href="/img/apple/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -34,6 +34,7 @@
 </head>
 
 <body>
+    <script src="scripts/datastore.js" charset="utf-8"></script>
     <!-- PAGE CONTAINER -->
     <div id="page-container">
         <!-- CONTENT WRAPPER -->
@@ -43,19 +44,17 @@
                 <!--TODO: add fixed positioning to header div-->
                 <!--HEADER TOP-->
                 <section id="header-logos">
-                    <!--TITLE & MINI LOGO [LEFT]-->
                     <div id="header-left-logos">
-                        <a href="index.html"><a href="index.html"><img id="header-leftmost-logo"
-                                    src="assets/img/logo_cjfw_shield_mini.png" alt="company logo"></a></a>
-
-                        <img id="header-leftleast-logo" src="assets/img/logo_cjfw_text.png"
+                        <a href="index.html"><img id="header-leftmost-logo" src="img/logo_cjfw_shield_mini.png"
+                                alt="company logo"></a>
+                        <img id="header-leftmost-logo" style="visibility: hidden;" src="img/logo_cjfw_text.png"
                             alt="Crystal J Floyd-Wilson: Life Coach and Professional Counselor">
                     </div>
 
                     <!--MAIN LOGO [CENTER]-->
                     <div id="header-center-logo">
-                        <a href="index.html"><a href="index.html"><img src="assets/img/logo_cjfw_shield.png"
-                                    alt="Crystal J Floyd-Wilson Main Logo"></a></a>
+                        <a href="index.html"><img src="img/logo_cjfw_text.png"
+                                alt="Crystal J Floyd-Wilson Main Logo"></a>
                     </div>
 
                     <!--ACCOUNT AND CART [RIGHT]-->
@@ -85,7 +84,7 @@
 
                                 <li><a href="insurance&fees.html">Insurance & Fees</a></li>
 
-                                <li><a href="appointments.html">Appointments</a></li>
+                                <li><a href="pages/appointments.html">Appointments</a></li>
 
                                 <li><a href="store.html">Store</a></li>
 
@@ -102,7 +101,7 @@
             <!--END HEADER-->
 
             <!--NEW USER FORM-->
-            <form action="create_account.js">
+            <form action="/scripts/create_account.js">
                 <div class="form-wrapper">
                     <h1 class="ca-h1">Create Account</h1>
                     <div class="row">
@@ -137,17 +136,17 @@
                         </div>
                     </div>
                     <div class="row">
-                    <!-- GET A PASSWORD API TO HANDLE THIS -->
-                    <div class="column left">
-                        <span class="ca-span">Password:</span><br>
-                        <input type="password" name="Password" class="ca-input" placeholder="Ex: ********"
-                            autocomplete="new-password">
-                        <br></div>
-                    <div class="column right">
-                        <span class="ca-span">Confirm Password:</span><br>
-                        <input type="password" name="Confirm Password" class="ca-input" placeholder="Ex: ********"
-                            autocomplete="new-password">
-                        <br></div>
+                        <!-- GET A PASSWORD API TO HANDLE THIS -->
+                        <div class="column left">
+                            <span class="ca-span">Password:</span><br>
+                            <input type="password" name="Password" class="ca-input" placeholder="Ex: ********"
+                                autocomplete="new-password">
+                            <br></div>
+                        <div class="column right">
+                            <span class="ca-span">Confirm Password:</span><br>
+                            <input type="password" name="Confirm Password" class="ca-input" placeholder="Ex: ********"
+                                autocomplete="new-password">
+                            <br></div>
                     </div>
                     <div>
                         <input type="checkbox" name="Newsletter" class="ca-checkbox">
@@ -159,9 +158,13 @@
                             acknowledge that I am blah blah blah, and I understand the Privacy Thigamajig.</span>
                         <br></div>
                     <div>
-                        <input type="submit" name="Submit" value="Create Account" id="ca-button"
+                        <input type="submit" name="Submit" value="Create Account" class="ca-button-submit"
                             onclick="createAccount()">
                         <br></div>
+
+                    <div>
+                        <input type="reset" class="ca-button-reset" name="Reset Appointment" value="Clear"><br>
+                    </div>
                 </div>
             </form>
             <!--END NEW USER FORM-->
@@ -174,7 +177,7 @@
         <footer class="footer">
             <!--CENTERED-->
             <div class="footer-alignment">
-                <img src="assets/img/logo_cjfw_shield_gold_mini.png" alt="Golden Logo">
+                <img src="img/logo_cjfw_shield_gold_mini.png" alt="Golden Logo">
                 <p>Copyright © 2019 Crystal J. Floyd-Wilson MSW, LCSWA. All Rights Reserved.</p>
             </div>
             <!-- SOCIAL -->
@@ -185,13 +188,11 @@
             </div>
             <p id="designer-footer">Web Design by:</p>
             <a id="designer-footer-logo" href="https://thebrowncoder.com" target="blank"><img
-                    src="assets/img/TBC_Logo.svg" alt="The Brown Coder Media Company" style="max-width: 40px;"></a>
+                    src="img/TBC_Logo.svg" alt="The Brown Coder Media Company" style="max-width: 40px;"></a>
 
         </footer>
     </div>
     <!--END PAGE CONTAINER-->
-    <script src="scripts/formhandler.js charset=" utf-8 <script src="scripts/create_account.js" charset="utf-8">
-    </script>
 </body>
 <script id="__bs_script__">
     //<![CDATA[
